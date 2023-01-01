@@ -1,6 +1,7 @@
-FROM golang:1.18-alpine 
+FROM ubuntu
+FROM golang:latest
 
-ARG app=main 
+ARG app=index 
 
 RUN mkdir /app 
 COPY main.go /app/
